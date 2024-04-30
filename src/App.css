@@ -1,0 +1,62 @@
+/* General reset for body to remove default margins and set background */
+body {
+  margin: 0;
+  padding: 0;
+  background: white; /* Clean white background or choose a color that fits your design */
+  font-family: Arial, sans-serif; /* Ensures a consistent font across the app */
+}
+
+/* Styling for the navigation bar */
+nav {
+  background-color: #333; /* Dark background for the navbar */
+  color: white;
+  padding: 0.5rem 1rem; /* Padding around the nav elements */
+  display: flex;
+  justify-content: space-between; /* Space between logo and navigation links */
+  align-items: center;
+}
+
+.logo-link {
+  text-decoration: none; /* Removes underline from the logo link */
+  color: white; /* Ensures the logo is visible against the dark navbar */
+}
+
+.logo-link h1 {
+  margin: 0; /* Removes default margin from h1 */
+}
+
+/* Styling for navigation links */
+.links {
+  display: flex; /* Aligns links in a row */
+  list-style: none; /* Removes default list styling */
+}
+
+.links a {
+  color: white; /* White text for readability */
+  text-decoration: none; /* No underlines on links */
+  padding: 10px; /* Padding around links for easier clickability */
+  transition: color 0.3s; /* Smooth transition for hover effects */
+}
+
+.links a:hover {
+  color: #ccc; /* Lighter color on hover */
+}
+
+/* Responsive mobile menu toggle */
+.nav-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Mobile menu visibility */
+.links.open {
+  display: block; /* Shows the links when open */
+}
+
+/* Main content area */
+main {
+  padding: 20px; /* Padding around the main content */
+}
