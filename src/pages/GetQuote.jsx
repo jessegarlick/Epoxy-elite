@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React, { useState } from "react";
+import axios from "axios";
 
 const GetQuote = () => {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [streetAddress, setStreetAddress] = useState('');
-  const [city, setCity] = useState('');
-  const [state, setState] = useState('');
-  const [zipCode, setZipCode] = useState('');
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [streetAddress, setStreetAddress] = useState("");
+  const [city, setCity] = useState("");
+  const [state, setState] = useState("");
+  const [zipCode, setZipCode] = useState("");
   const [sent, setSent] = useState(false);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -26,17 +26,26 @@ const GetQuote = () => {
       zipCode,
     };
     try {
-      const res = await axios.post('/api/quote', formData);
+      const res = await axios.post("/api/quote", formData);
       console.log("Response received:", res);
       if (res.status === 200 && res.data.status === "success") {
         setSent(true);
-        setError(''); // Clear any previous errors on successful send
+        setError(""); // Clear any previous errors on successful send
+        // Reset form fields
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setPhone("");
+        setStreetAddress("");
+        setCity("");
+        setState("");
+        setZipCode("");
       } else {
         throw new Error(res.data.message || "Failed to submit quote.");
       }
     } catch (error) {
       console.error("Error submitting quote request:", error);
-      let errorMessage = 'Error submitting quote request. Please try again.';
+      let errorMessage = "Error submitting quote request. Please try again.";
       if (error.response && error.response.data) {
         errorMessage = error.response.data.message || errorMessage; // Use the server-provided message if available
         console.error("Error status:", error.response.status);
@@ -46,7 +55,6 @@ const GetQuote = () => {
       setSent(false); // Ensure sent is reset on error
     }
   };
-  
 
   return (
     <div className="get-quote-container">

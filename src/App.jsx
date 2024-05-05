@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
-import Home from './pages/Home';
-import Gallery from './pages/Gallery';
-import Services from './pages/Services';
-import Contact from './pages/Contact';
-import About from './pages/About';
-import GetQuote from './pages/GetQuote'; // Import the new page component
-import './App.css';
+import React, { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import Home from "./pages/Home";
+import Gallery from "./pages/Gallery";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
+import GetQuote from "./pages/GetQuote"; // Import the new page component
+import "./App.css";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false); // For mobile nav toggle
@@ -17,9 +17,12 @@ function App() {
     <BrowserRouter>
       <header>
         <nav>
-          <NavLink to="/" className="logo-link"><h1>Epoxy Elite</h1></NavLink>
-          <div className={`links ${isOpen ? 'open' : ''}`}>
-            <NavLink to="/get-quote">Get Quote</NavLink>  {/* New NavLink for getting a quote */}
+          <NavLink to="/" className="logo-link">
+            <h1>Epoxy Elite</h1>
+          </NavLink>
+          <div className={`links ${isOpen ? "open" : ""}`}>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/get-quote">Get Quote</NavLink>{" "}
             <NavLink to="/services">Services</NavLink>
             <NavLink to="/gallery">Gallery</NavLink>
             <NavLink to="/about">About</NavLink>
