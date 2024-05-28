@@ -1,0 +1,71 @@
+.home-page {
+    background-image: url("../EpoxyStuff/home.jpg");
+    background-size: cover;
+
+    height: 1000px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .home-page h1 {
+    color: rgb(255, 255, 255); /* original text color */
+    font-family: 'Roboto Mono', monospace;
+    
+  }
+
+  .home-page p {
+    color: white;
+    text-shadow: 0 0 10px #010201; /* add this to create a border around the text */
+    font-family: 'Roboto Mono', monospace;
+
+    
+  }
+  
+
+  
+  .button1 {
+    background-color: #4cafaa; /* adjust this to the color you want */
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 30px; /* added margin property with values for top and right sides */ 
+    display: inline-block; /* changed the display property to inline-block */
+    transition: all 0.3s ease-in-out; /* add a transition effect */
+}
+  
+.button1:hover {
+    color: #4cafaa;
+    background-color: #010201; /* adjust this to the hover color you want */
+    transform: scale(1.05); /* increase the size by 5% on hover */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* add a subtle shadow effect */
+}
+.button2 {
+    background-color: #000000; /* adjust this to the color you want */
+    color: #4cafaa;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 30px; /* added margin property with values for top and right sides */ 
+    display: inline-block; /* changed the display property to inline-block */
+    transition: all 0.3s ease-in-out; /* add a transition effect */
+}
+  
+.button2:hover {
+    background-color: #4cafaa; /* adjust this to the hover color you want */
+    transform: scale(1.05); /* increase the size by 5% on hover */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* add a subtle shadow effect */
+    color: #000000;
+}
+  /* Add this rule to remove extra space between nav and main content */
+  .home-page {
+    padding-top: 0;
+  }
+  .title {
+
+    font-size: 60px;
+    color: white;
+    text-shadow: 0 0 10px #010201; /* add this to create a border around the text */
+  }

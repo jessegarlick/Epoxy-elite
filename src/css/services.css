@@ -1,47 +1,45 @@
 /* Service Card Styles */ 
 .services-container {
-    max-width: 1200px;
-    margin: 40px auto;
-    display: flex; /* changed to flex */
-    flex-direction: column; /* sets the layout direction to row (instead of column) */
-    flex-wrap: wrap; /* allows cards to wrap to a new row */
-    justify-content: space-between; /* evenly spaces the cards */
-  }
-  
-  .service-card {
-    background-color: #f9f9f9; /* same as before */
-    border-radius: 10px;
-    width: calc((100% - 40px) / 3); /* adjusted the width for better row distribution */
-    margin: 20px;
-    padding: 30px; /* same as before */
-  }
-  
-  .service-card:hover {
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
-  }
-  
-  /* Service Card Image Styles */ 
-  .service-card-image {
-    border-radius: 10px 10px 0 0;
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 20px;
-  }
-  
-  /* Service Card Text Styles */
-  .service-card-text {
-    font-size: 24px; /* same as before */
-    font-weight: bold;
-    color: #333; /* same as before */
-    text-align: center;
-    padding-bottom: 15px; /* same as before */
-  }
-  .service-card-description {
-    font-size: 12px; /* same as before */
-    font-weight: bold;
-    color: #333; /* same as before */
-    text-align: left;
-    padding-bottom: 15px; /* same as before */
-  }
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #000000;
+}
+
+.service-item {
+  margin-bottom: 40px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.service-item h1 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+
+}
+
+.service-item img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 auto; /* added margin property with values for top and left sides */
+  display: block; /* changed the display property to block */
+  max-width: calc(100% - 20px); /* added max-width property to limit the image width */
+}
+
+.service-item p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 20px;
+  text-align: center;
+}

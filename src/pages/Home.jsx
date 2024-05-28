@@ -1,29 +1,37 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import '../css/home.css'; // Import your CSS file
 
 
 function Home() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    // Now you can use navigate like this:
-    const handleGoBack = () => {
-      navigate(-1); // Go back to the previous route
-    };
-    const getQuote = () => {
-        navigate('/get-quote');
-      };
-    const product = () => {
-        navigate('/services')
-    }
-  
+  const handleGoBack = () => {
+    navigate(-1); // Go back to the previous route
+  };
+  const getQuote = () => {
+    navigate('/get-quote');
+  };
+  const product = () => {
+    navigate('/services')
+  }
+
   return (
-    <div>
-      <button onClick={handleGoBack}>Go Back</button>
-      <h1>Welcome to Epoxy Elite</h1>
-      <p>Your premier destination for epoxy products and services.</p>
-      <button onClick={product}>Explore Products</button>
-      <button onClick={getQuote}>Get Quote</button>
-    </div>
+    <div className="home-page" >
+      <div className='header'>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      <h1 className='title'>WELCOME TO EPOXY ELITE</h1>
+      <p>Your premier destination for epoxy products and services</p>
+      </div>
+     
+      <button className="button1" onClick={product}>EXPLORE PRODUCTS</button>
+      <button className="button2" onClick={getQuote}>GET PRICING</button>
+      </div>
+   
   );
 }
 

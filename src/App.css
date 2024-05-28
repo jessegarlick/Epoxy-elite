@@ -1,16 +1,16 @@
+
 /* General reset for body to remove default margins and set background */
 body {
-  margin: 0;
   padding: 0;
-  background: white; /* Clean white background or choose a color that fits your design */
-  font-family: Arial, sans-serif; /* Ensures a consistent font across the app */
+  background: rgb(0, 0, 0); /* Clean white background or choose a color that fits your design */
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
 }
 
 /* Styling for the navigation bar */
 nav {
-  background-color: #333; /* Dark background for the navbar */
+  background-color: #000000; /* Dark background for the navbar */
   color: white;
-  padding: 0.5rem 1rem; /* Padding around the nav elements */
   display: flex;
   justify-content: space-between; /* Space between logo and navigation links */
   align-items: center;
@@ -20,43 +20,41 @@ nav {
   text-decoration: none; /* Removes underline from the logo link */
   color: white; /* Ensures the logo is visible against the dark navbar */
 }
-
-.logo-link h1 {
-  margin: 0; /* Removes default margin from h1 */
+.logo-link img {
+  width: 250px; /* or any other desired size */
+  height: 60px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Styling for navigation links */
-.links {
-  display: flex; /* Aligns links in a row */
-  list-style: none; /* Removes default list styling */
+nav .links {
+  list-style: none;
+  margin: 20px; /* adjust this value as needed */
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* add this property to space out the links */
 }
 
-.links a {
-  color: white; /* White text for readability */
-  text-decoration: none; /* No underlines on links */
-  padding: 10px; /* Padding around links for easier clickability */
-  transition: color 0.3s; /* Smooth transition for hover effects */
+
+
+
+
+nav .links a {
+  color: #ffffff; /* change the link color to your preference */
+  text-decoration: none;
 }
 
-.links a:hover {
-  color: #ccc; /* Lighter color on hover */
+nav .links a:hover,
+nav .links a:focus {
+  color: #252525; /* change the hover/focus color to your preference */
+}
+.phone {
+  margin-right: 10px;
 }
 
-/* Responsive mobile menu toggle */
-.nav-toggle {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-
-/* Mobile menu visibility */
-.links.open {
-  display: block; /* Shows the links when open */
-}
-
-/* Main content area */
-main {
-  padding: 20px; /* Padding around the main content */
-}
+@import "~bootstrap/dist/css/bootstrap.min.css";

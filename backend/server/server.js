@@ -21,6 +21,7 @@ app.use(
 // Placeholder for your route handlers
 
 app.post("/api/quote", handlerFunctions.createQuote);// Example: app.get('/api', (req, res) => res.send('API Root'));
+app.post("/api/job", handlerFunctions.createJob);
 
 // Run the server with ViteExpress
 ViteExpress.listen(app, 5173, () => {

@@ -1,0 +1,32 @@
+/* Reset footer styles */
+footer {
+    background-color: #000000; /* Add a background color if needed */
+    padding: 20px;
+    border-top: 1px solid white; /* Add a white border to the top */
+    border-bottom: 1px solid white; /* Add a white border to the top */
+
+  }
+  
+  /* Define the icon container */
+
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between; /* align items to the right */
+    flex-wrap: wrap; /* allow wrapping to a new line */
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
+    color: white;
+  }
+  
+.career-link {
+    cursor: pointer;
+}
+ 
+  
+  /* Define the social media icon styles */
+  .bi {
+    font-size: 16px;
+    cursor: pointer; /* Add a pointer cursor to indicate clickable icons */
+  }

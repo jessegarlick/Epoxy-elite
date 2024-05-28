@@ -1,0 +1,73 @@
+.get-quote-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .get-quote-container h2 {
+    font-weight: bold;
+    margin-top: 0;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  .form-group {
+    margin-bottom: 30px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 95%;
+    height: 40px;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #666;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  button[type="submit"] {
+    background-color: #4cafaa; /* adjust this to the color you want */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 30px; /* added margin property with values for top and right sides */ 
+    display: inline-block; /* changed the display property to inline-block */
+    transition: all 0.3s ease-in-out; /* add a transition effect */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #010201; /* adjust this to the hover color you want */
+    transform: scale(1.05); /* increase the size by 5% on hover */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* add a subtle shadow effect */
+  }
+  
+  .error-message {
+    color: #dc35f7;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .success-message {
+    color: #28a745;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  

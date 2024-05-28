@@ -1,0 +1,36 @@
+.about {
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  background-image: url("../EpoxyStuff/aboutus.jpg");
+  background-size: cover;
+
+  height: 1000px;
+  padding: 20px;
+}
+.about-container {
+    background-color: rgba(0, 0, 0, 0.5); /* added opacity */
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-family: "Futura", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  font-size: 18px;
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+  margin-bottom: 20px;
+
+}

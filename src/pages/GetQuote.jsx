@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "../css/quote.css";
+
 
 const GetQuote = () => {
   const [firstName, setFirstName] = useState("");
@@ -58,7 +60,7 @@ const GetQuote = () => {
 
   return (
     <div className="get-quote-container">
-      <h2>Get a Quote</h2>
+      <h2>Request an Estimate</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="firstName">First Name:</label>
@@ -165,7 +167,7 @@ const GetQuote = () => {
           />
         </div>
         <button type="submit" className="btn btn-primary">
-          Get Quote
+        Get Pricing
         </button>
       </form>
       {sent ? (
